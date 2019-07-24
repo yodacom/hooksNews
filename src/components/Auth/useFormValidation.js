@@ -1,11 +1,10 @@
 import React from "react";
-// eslint-disable-next-line react-hooks/exhaustive-deps
-function useFormValidation(initialState, validate, authenticate ) {
+
+function useFormValidation(initialState, validate, authenticate) {
   const [values, setValues] = React.useState(initialState);
   const [errors, setErrors] = React.useState({});
   const [isSubmitting, setSubmitting] = React.useState(false);
 
-  
   React.useEffect(() => {
     if (isSubmitting) {
       const noErrors = Object.keys(errors).length === 0;
@@ -16,7 +15,6 @@ function useFormValidation(initialState, validate, authenticate ) {
         setSubmitting(false);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errors]);
 
   function handleChange(event) {
@@ -34,7 +32,6 @@ function useFormValidation(initialState, validate, authenticate ) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const validationErrors = validate(values);
     setErrors(validationErrors);
     setSubmitting(true);
@@ -51,4 +48,3 @@ function useFormValidation(initialState, validate, authenticate ) {
 }
 
 export default useFormValidation;
-
