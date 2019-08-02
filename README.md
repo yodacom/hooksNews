@@ -1,6 +1,8 @@
+This specific repo using CRA demonstrates how to use React Hooks to fetch data and uses Google's Firebase serverless functions, authentication, database, and hosting.  Thanks to Reed Barger for his guidence and course on Hooks as the basis for building a react app using the new react hooks methodology. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This specific repo using CRA demonstates how to use React Hooks to fetch data and using Google's Firebase serverless functions, authentication, database, and hosting.
+
 
 ## Available Scripts
 
