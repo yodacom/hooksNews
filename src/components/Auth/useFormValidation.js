@@ -48,3 +48,4 @@ function useFormValidation(initialState, validate, authenticate) {
 }
 
 export default useFormValidation;
+
