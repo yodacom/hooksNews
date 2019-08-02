@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This specific repo using CRA demonstates how to use React Hooks to fetch data and using Google's Firebase serverless functions, authentication, database, and hosting.
+
 ## Available Scripts
 
 In the project directory, you can run:
